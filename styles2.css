@@ -1,0 +1,320 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    margin: 30px;
+    
+    background-image: url(	https://framerusercontent.com/images/mS9YcTgNuY7KDFdV91lMdjsZ2Ps.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.profile-card {
+    background-color:  #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    border-radius: 24px;
+
+    animation: fadeIn 0.6s ease-in-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: both ;
+}
+
+#circle {
+    margin: 10px;
+    color: black;
+    display: flex;
+    justify-content: end;
+    font-size: 10px;
+    cursor: pointer;
+    transition:0.3s;
+    transform-origin: center;
+}
+
+.fa-circle:hover {
+    color: black;
+}
+
+
+.profile-image {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+    animation: fadeIn 0.6s ease-in-out;
+    animation-delay: 0.4s;
+    animation-fill-mode: both ;
+}
+
+h1 {
+    color: black;
+    font-size: 35px;
+    margin: 10px 10px;
+    animation: fadeIn 0.6s ease-in-out;
+    animation-delay: 0.6s;
+    animation-fill-mode: both ;
+}
+
+.verified i {
+    color: #1Da1f2;
+    font-size: 28px;
+    
+
+    animation: pulse 1.5s infinite;
+}
+
+.description {
+    padding: auto;
+    font-size: 15px;
+    font: bold;
+    margin: 20px 50px;
+    color:#a7a7a7; 
+
+    animation: fadeIn 0.6s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: both ;
+    
+}
+
+.links {
+
+
+    animation: fadeIn 0.6s ease-in-out;
+    animation-delay: 1.2s;
+    animation-fill-mode: both ;
+}
+
+.link {
+
+    flex: 1 0 0px;
+    height: 50px;
+    position: center;
+    width: 85%;
+    margin-left: 30px;
+    text-decoration: none;
+
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color:#c0c0c03f;
+    padding: 10px;
+    border-radius:50px;
+    margin-bottom: 10px;
+
+
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.link-text {
+    font-size: 20px;
+    color: black;
+    margin-top: 7px;
+}
+
+.link .fa-arrow-up-right-from-square {
+    color:#bebebe;
+}
+
+.twitch {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(145, 70, 255);;
+    border-radius:50%;
+    
+}
+
+.logoyoutube {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+}
+
+.logoyoutube img {
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.logotiktok{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.logotiktok img {
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.logoonly {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(0, 175, 240);
+    border-radius: 50%;
+}
+
+
+.logoonly img {
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.logospot {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(29, 185, 84);
+    border-radius: 50%;
+}
+
+.logospot img {
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.logocoffee {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(255, 221, 0);
+    border-radius: 50%;
+}
+
+.logocoffee img {
+    width: 40px;
+    height: 40px;
+    padding-top: 7px;
+}
+
+.link:hover {
+    background: #b1b1b191;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.link i {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.link, i, #share {
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.link .link-text p {
+
+    margin: 0 auto;
+    font: bold;
+}
+
+@media (max-width: 480px) {
+    body {
+        background-image: none;
+        margin: 0;
+        padding: 0;
+    }
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .verified i{
+        font-size: 15px;
+    }
+    .description{
+        font-size: 12px;
+        margin: 30px 5px;
+    }
+    .link {
+        width: auto;
+        height: 5vh;
+        margin: 5px;
+    }
+    .link-text {
+        font-size: 15px;
+        margin: 8px;
+        text-align: left;
+    }
+    .twitch {
+        width: 50px;
+        height: 50px;
+    }
+    .logoyoutube{
+        width: 50px;
+        height: 50px;
+        padding: 1px;
+    }
+    .logoyoutube img {
+        width: 30px;
+        height: 30px;
+        padding-top: 10px;
+    }
+    .logotiktok {
+        width: 50px;
+        height: 50px;
+    }
+    .logotiktok img {
+        width: 30px;
+        height: 30px;
+    }
+    .logoonly {
+        width: 50px;
+        height: 50px;
+    }
+    .logoonly img {
+        width: 30px;
+        height: 30px;
+    }
+    .logospot {
+        width: 19vw;
+        height: 50px;
+    }
+    .logospot img {
+        width: 30px;
+        height: 30px;
+        padding-top: 10px;
+    }
+    .logocoffee {
+        width: 50px;
+        height: 50px;
+    }
+    .logocoffee img {
+        width: 30px;
+        height: 30px;
+    }
+}

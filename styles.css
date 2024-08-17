@@ -1,0 +1,276 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f0f0f;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    margin: auto;
+    
+    background-image: url(https://framerusercontent.com/images/PTYt6o2b0TlzkrA4rf2oJnydqis.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profile-card {
+    background-color:  rgba(13, 13, 13, .9);
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+    width: 600px;
+    border-radius: 24px;
+
+    animation: fadeIn 0.6s ease-in-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: both ;
+}
+
+#circle {
+    margin: 10px;
+    display: flex;
+    justify-content: end;
+    font-size: 10px;
+    cursor: pointer;
+    transition:  0.3s;
+}
+
+.fa-circle:hover {
+    color: #999999;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+    animation: fadeIn 0.6s ease-in-out;
+    animation-delay: 0.4s;
+    animation-fill-mode: both ;
+}
+
+h1 {
+    font-size: 35px;
+    margin: 10px 10px;
+    animation: fadeIn 0.6s ease-in-out;
+    animation-delay: 0.6s;
+    animation-fill-mode: both ;
+}
+
+.verified i {
+    color: rgb(29, 161, 242);
+    font-size: 28px;
+    
+
+    animation: pulse 1.5s infinite;
+}
+
+.subtitle{
+    padding: auto;
+    font-size: 15px;
+    font: bold;
+    margin: 20px 50px;
+    color:#757474; 
+
+    animation: fadeIn 0.6s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: both ;
+    
+}
+
+
+.links {
+
+
+    animation: fadeIn 0.6s ease-in-out;
+    animation-delay: 1.2s;
+    animation-fill-mode: both ;
+}
+
+.link {
+
+    flex: 1 0 0px;
+    height: 50px;
+    position: center;
+    width: 95%;
+
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color: rgba(255, 255, 255, .05);
+    padding: 10px;
+    border-radius:12px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+
+
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.link:hover {
+    background: #444;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.link i {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.link, i, #share {
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.link p {
+    font-size:20px;
+    margin: 0 auto;
+    font: bold;
+}
+
+.link .description{
+    font-size:15px;
+    font: bold;
+}
+
+
+.join{
+    display: flex;
+    gap: 15px;
+}
+
+.ph-x-logo {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;   
+}
+
+.link-text {
+    text-align: left;
+    margin-top: 7px;
+}
+
+.description {
+    color:#757474;
+}
+
+.link .fa-arrow-up-right-from-square {
+    color:#5a5959;
+}
+
+.logohunter img {
+    width: 60px;
+    height: 60px;
+    margin-top: 3px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.fa-figma {
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    margin: 0;
+    background-color: rgb(85, 81, 255);
+    border-radius: 10px;
+}
+
+.logog {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(255, 144, 232);
+    border-radius: 10px;
+}
+
+.logolemon {
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+}
+
+.logocontra {
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 480px) {
+    body {
+        background-image: none;
+        margin: auto;
+        padding: auto;
+    }
+    .profile-card {
+        margin: 0;
+        padding: 0;
+    }
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .verified i{
+        font-size: 15px;
+    }
+    .subtitle{
+        font-size: 0.8rem;
+        width: 200px;
+        height: 20vh;
+        margin: 1px;
+        text-align: center;
+        margin-left: 50px;
+    }
+    .description{
+        font-size: 10px;
+        margin:30px 0;
+    }
+    .logog{
+        width: 4.6rem;
+    }
+    .link {
+        width: 17rem;
+        height: auto;
+        margin: 5px;
+    }
+    .link p{
+        font-size: 1rem;
+    }
+    .link .description{
+        font-size: 0.7rem;
+    }
+}
